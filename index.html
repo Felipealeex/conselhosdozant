@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conselhos Amorosos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Conselhos Amorosos com o ZANT</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="exibirConselhos('romantico')">Puxando assuntos como o ZANT</a></li>
+                <li><a href="#" onclick="exibirConselhos('engracado')">Quebrando o Gelo como o ZANT</a></li>
+                <li><a href="#" onclick="exibirConselhos('flertes')">Flertes como o ZANT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="conselhos-container" class="oculto">
+            <h2 id="titulo-conselhos"></h2>
+            <table id="tabela-conselhos" class="tabela-conselhos">
+                <thead>
+                    <tr>
+                        <th>Conselhos</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

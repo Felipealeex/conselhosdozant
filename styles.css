@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url(./macacosedutor1.webp); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #ffffff;
+    overflow-x: hidden; /* Evita rolagem horizontal ao gerar partículas */
+}
+
+header {
+    background-color: #e63946;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block; 
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+
+nav ul li a:hover {
+    transform: scale(1.1); 
+    color: #3f1a13; 
+}
+main {
+    padding: 20px;
+}
+
+.conteudo {
+    display: none;
+    margin-top: 20px;
+}
+
+.oculto {
+    display: none;
+}
+
+.dica {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+
+.particle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    animation: fadeAndFloat 3s ease forwards;
+    z-index: 1000;
+}
+
+.particle-heart {
+    background-image: url('https://via.placeholder.com/20x20/FF0000/FFFFFF?text=%E2%9D%A4'); 
+    background-size: cover;
+}
+
+.particle-star {
+    background-image: url('https://via.placeholder.com/20x20/FFD700/FFFFFF?text=%E2%AD%90'); 
+    background-size: cover;
+}
+
+.particle-lips {
+    background-image: url('https://via.placeholder.com/20x20/FF69B4/FFFFFF?text=%F0%9F%91%8B'); 
+    background-size: cover;
+}
+.tabela-conselhos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.tabela-conselhos th, .tabela-conselhos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+
+.tabela-conselhos th {
+    background-color: #e63946;
+}
+
+.tabela-conselhos td {
+    cursor: pointer; 
+}
+
+
+.tabela-conselhos tr {
+    transition: transform 0.3s ease-in-out; 
+    
+}
+
+
+.tabela-conselhos tr:hover {
+    transform: scale(1.01); 
+    background-color: #8B0000;
+}
+
+.oculto {
+    display: none;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+
+@keyframes fadeAndFloat {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
